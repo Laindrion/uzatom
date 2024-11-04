@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date of Birth Validation</title>
+    <style>
+        .error-border {
+            border-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <label class="registration__form-label" for="date">
+        Date of birth
+        <input class="registration__form-item input" type="date" data-role="calendarpicker"
+            name="Members[birth_date][0]" id="date" required>
+    </label>
+
+    <button onclick="validateDate()">Submit</button>
+
+    <script>
+        function validateDate() {
+            const dateInput = document.getElementById('date');
+            if (!dateInput.value) {
+                dateInput.classList.add('error-border');
+            } else {
+                dateInput.classList.remove('error-border');
+            }
+        }
+    </script>
+</body>
+
+</html>
