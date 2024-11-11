@@ -71,7 +71,7 @@
                                 </a>
                             </li>
                             <li class="menu__list-item">
-                                <a class="menu__list-link" href="#">
+                                <a class="menu__list-link" href="about.html">
                                     ABOUT ATOM
                                 </a>
                             </li>
@@ -256,6 +256,14 @@
                                 <!-- Открывается новый инпут -->
                                 <option value="6">Other</option>
                             </select>
+                        </label>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <label class="registration__form-label" for="title_option">
+                            Enter your title
+                            <input required class="registration__form-item input" type="text" name="Members[title][0]"
+                                id="title_option">
                         </label>
                     </div>
 
@@ -492,7 +500,6 @@
                         </label>
                     </div>
 
-
                     <div class="col-lg-4">
                         <label class="registration__form-label file" for="photo">
                             <img src="images/table-photo.svg" alt="">
@@ -554,7 +561,7 @@
                         <label class="registration__form-label" for="date-of-arrival">
                             Date
                             <input class="registration__form-item input flight-info" type="date-of-arrival"
-                                data-role="calendarpicker" name="Members[birth_date][0]" id="date" disabled required>
+                                data-role="calendarpicker" name="Members[arrival_date][0]" id="date" disabled required>
                         </label>
                     </div>
 
@@ -562,7 +569,7 @@
                         <label class="registration__form-label" for="city-of-arrival">
                             City of arrival
                             <input required class="registration__form-item input flight-info" type="text"
-                                name="Members[job_title][0]" id="city-of-arrival" disabled>
+                                name="Members[arrival_city][0]" id="city-of-arrival" disabled>
                         </label>
                     </div>
 
@@ -570,7 +577,7 @@
                         <label class="registration__form-label" for="flight-number">
                             Flight number
                             <input required class="registration__form-item input flight-info" type="number"
-                                name="Members[job_title][0]" id="flight-number" disabled>
+                                name="Members[arrival_flight_number][0]" id="flight-number" disabled>
                         </label>
                     </div>
 
@@ -581,7 +588,8 @@
                         <label class="registration__form-label" for="date-of-departure">
                             Date
                             <input class="registration__form-item input flight-info" type="date-of-departure"
-                                data-role="calendarpicker" name="Members[birth_date][0]" id="date" disabled required>
+                                data-role="calendarpicker" name="Members[departure_date][0]" id="date" disabled
+                                required>
                         </label>
                     </div>
 
@@ -589,7 +597,7 @@
                         <label class="registration__form-label" for="city-of-departure">
                             Departure city
                             <input required class="registration__form-item input flight-info" type="text"
-                                name="Members[job_title][0]" id="city-of-departure" disabled>
+                                name="Members[departure_city][0]" id="city-of-departure" disabled>
                         </label>
                     </div>
 
@@ -597,14 +605,15 @@
                         <label class="registration__form-label" for="flight-number-departure">
                             Flight number
                             <input required class="registration__form-item input flight-info" type="number"
-                                name="Members[job_title][0]" id="flight-number-departure" disabled>
+                                name="Members[departure_flight_number][0]" id="flight-number-departure" disabled>
                         </label>
                     </div>
 
                     <div class="col-lg-4">
                         <label class="registration__form-label" for="">
                             Do you need a visa to enter Uzbekistan?
-                            <input class="registration__form-item checkbox flight-info" name="" type="checkbox">
+                            <input class="registration__form-item checkbox flight-info" name="Members[visa][0]"
+                                type="checkbox">
                         </label>
                     </div>
                 </div>
@@ -619,7 +628,7 @@
                             <label class="registration__form-label" for="work-phone-number">
                                 Work phone number
                                 <input required class="registration__form-item input" type="number"
-                                    name="Members[phone][0]" id="work-phone-number">
+                                    name="Members[work_phone][0]" id="work-phone-number">
                             </label>
                         </div>
                     </div>
@@ -635,7 +644,7 @@
                             <label class="registration__form-label" for="work-phone-number">
                                 Work phone number
                                 <input required class="registration__form-item input" type="number"
-                                    name="Members[phone][0]" id="work-phone-number">
+                                    name="Members[work_phone][0]" id="work-phone-number">
                             </label>
                         </div>
 
@@ -643,7 +652,7 @@
                             <label class="registration__form-label" for="work-phone-number">
                                 Accreditation certificate number
                                 <input required class="registration__form-item input" type="text"
-                                    name="Members[phone][0]" id="work-phone-number">
+                                    name="Members[accreditation_certificate][0]" id="work-phone-number">
                             </label>
                         </div>
                     </div>
