@@ -199,7 +199,7 @@
                     <div class="col-lg-4">
                         <label class="registration__form-label" for="position">
                             Position
-                            <select required id="position_select-0" class="registration__form-item select form-control"
+                            <select required id="position_select-0" class="registration__form-item select"
                                 name="Members[position][0]">
                                 <option value="">Choose participation role</option>
                                 <option value="Attendee">Attendee</option>
@@ -233,12 +233,11 @@
                     <div class="col-lg-4">
                         <label class="registration__form-label" for="members-gender-0">
                             Gender
-                            <select required id="members-gender-0" class="registration__form-item select form-control"
+                            <select required id="members-gender-0" class="registration__form-item select"
                                 name="Members[gender][0]">
                                 <option value="">Select Gender</option>
                                 <option value="1">Male</option>
                                 <option value="2">Female</option>
-                                <option value="3">Not specified</option>
                             </select>
                         </label>
                     </div>
@@ -246,7 +245,7 @@
                     <div class="col-lg-4">
                         <label class="registration__form-label" for="members-title-0">
                             Title
-                            <select required id="members-title-0" class="registration__form-item select form-control"
+                            <select required id="members-title-0" class="registration__form-item select remove-on-media"
                                 name="Members[title][0]">
                                 <option value="">Select Title</option>
                                 <option value="1">Mr.</option>
@@ -254,6 +253,7 @@
                                 <option value="3">Ms.</option>
                                 <option value="4">Dr.</option>
                                 <option value="5">Prof.</option>
+                                <!-- Открывается новый инпут -->
                                 <option value="6">Other</option>
                             </select>
                         </label>
@@ -288,7 +288,7 @@
                     <div class="col-lg-4">
                         <label class="registration__form-label" for="country">
                             Country
-                            <select required id="members-country" class="registration__form-item select form-control"
+                            <select required id="members-country" class="registration__form-item select remove-on-media"
                                 name="Members[country][0]">
                                 <option value="">Select Country</option>
                                 <option value="98">Australia</option>
@@ -489,7 +489,6 @@
                                 <option value="91">Jamaica</option>
                                 <option value="92">Japan</option>
                             </select>
-
                         </label>
                     </div>
 
@@ -497,7 +496,7 @@
                     <div class="col-lg-4">
                         <label class="registration__form-label file" for="photo">
                             <img src="images/table-photo.svg" alt="">
-                            Photo:
+                            Upload your photo (jpeg/jpg/png):
                             <input class="form-file registration__form-item" type="file"
                                 accept=".png, .jpg, .jpeg, .pdf" name="Members[photo][0]" id="photo" max-size="2097152"
                                 required>
@@ -507,7 +506,7 @@
                     <div class="col-lg-4">
                         <label class="registration__form-label file" for="passport">
                             <img src="images/table-photo.svg" alt="">
-                            Passport photo:
+                            Upload copy of your passport (jpeg/jpg/png):
                             <input class="form-file registration__form-item" type="file"
                                 accept=".png, .jpg, .jpeg, .pdf" name="Members[passport][0]" id="passport"
                                 max-size="2097152" required>
@@ -524,9 +523,10 @@
                         </label>
                     </div>
 
+
                     <div class="col-lg-4">
                         <label class="registration__form-label" for="organisation">
-                            Organisation
+                            <span id="org-text">Organisation</span>
                             <input required class="registration__form-item input" type="text"
                                 name="Members[organization][0]" id="organisation">
                         </label>
@@ -547,65 +547,64 @@
                         </label>
                     </div>
 
-                    <h4 class="registration__suptitle">
+                    <h4 class="registration__suptitle flight-info-title">
                         Arrival date in Uzbekistan
                     </h4>
                     <div class="col-lg-4">
                         <label class="registration__form-label" for="date-of-arrival">
                             Date
-                            <input class="registration__form-item input" type="date-of-arrival"
-                                data-role="calendarpicker" name="Members[birth_date][0]" id="date" required>
+                            <input class="registration__form-item input flight-info" type="date-of-arrival"
+                                data-role="calendarpicker" name="Members[birth_date][0]" id="date" disabled required>
                         </label>
                     </div>
 
                     <div class="col-lg-4">
                         <label class="registration__form-label" for="city-of-arrival">
                             City of arrival
-                            <input required class="registration__form-item input" type="text"
-                                name="Members[job_title][0]" id="city-of-arrival">
+                            <input required class="registration__form-item input flight-info" type="text"
+                                name="Members[job_title][0]" id="city-of-arrival" disabled>
                         </label>
                     </div>
 
                     <div class="col-lg-4">
                         <label class="registration__form-label" for="flight-number">
                             Flight number
-                            <input required class="registration__form-item input" type="number"
-                                name="Members[job_title][0]" id="flight-number">
+                            <input required class="registration__form-item input flight-info" type="number"
+                                name="Members[job_title][0]" id="flight-number" disabled>
                         </label>
                     </div>
 
-                    <h4 class="registration__suptitle">
+                    <h4 class="registration__suptitle flight-info-title">
                         Departure date from Uzbekistan
                     </h4>
                     <div class="col-lg-4">
                         <label class="registration__form-label" for="date-of-departure">
                             Date
-                            <input class="registration__form-item input" type="date-of-departure"
-                                data-role="calendarpicker" name="Members[birth_date][0]" id="date" required>
+                            <input class="registration__form-item input flight-info" type="date-of-departure"
+                                data-role="calendarpicker" name="Members[birth_date][0]" id="date" disabled required>
                         </label>
                     </div>
 
                     <div class="col-lg-4">
                         <label class="registration__form-label" for="city-of-departure">
                             Departure city
-                            <input required class="registration__form-item input" type="text"
-                                name="Members[job_title][0]" id="city-of-departure">
+                            <input required class="registration__form-item input flight-info" type="text"
+                                name="Members[job_title][0]" id="city-of-departure" disabled>
                         </label>
                     </div>
 
                     <div class="col-lg-4">
                         <label class="registration__form-label" for="flight-number-departure">
                             Flight number
-                            <input required class="registration__form-item input" type="number"
-                                name="Members[job_title][0]" id="flight-number-departure">
+                            <input required class="registration__form-item input flight-info" type="number"
+                                name="Members[job_title][0]" id="flight-number-departure" disabled>
                         </label>
                     </div>
-
 
                     <div class="col-lg-4">
                         <label class="registration__form-label" for="">
                             Do you need a visa to enter Uzbekistan?
-                            <input class="registration__form-item checkbox" name="" type="checkbox">
+                            <input class="registration__form-item checkbox flight-info" name="" type="checkbox">
                         </label>
                     </div>
                 </div>
@@ -628,8 +627,8 @@
 
                 <!-- ACCOMPANYING PERSON-2 START -->
                 <div class="form-inner" id="registration-person-2">
-                    <!--  <h4 class="registration__suptitle">
-                        Person 2
+                    <h4 class="registration__suptitle">
+                        For accreditated media
                     </h4>
                     <div class="row">
                         <div class="col-lg-4">
@@ -639,7 +638,15 @@
                                     name="Members[phone][0]" id="work-phone-number">
                             </label>
                         </div>
-                    </div> -->
+
+                        <div class="col-lg-4">
+                            <label class="registration__form-label" for="work-phone-number">
+                                Accreditation certificate number
+                                <input required class="registration__form-item input" type="text"
+                                    name="Members[phone][0]" id="work-phone-number">
+                            </label>
+                        </div>
+                    </div>
                 </div>
 
                 <!-- REGISTRATION LINKS START -->
@@ -655,81 +662,6 @@
                         </a>
                     </p>
                 </div>
-
-
-                <!-- SESSIONS START -->
-                <!--   <div class="sessions">
-                    <h1 class="sessions__title">
-                        Sessions
-                    </h1>
-
-                    <ul class="sessions__list">
-
-                        <h2 class="sessions__time">
-                            14:00-15:30
-                        </h2>
-
-                        <li class="sessions__list-item">
-                            <label for="session-1">
-                                <input required class="registration__form-item session" value="1" type="radio"
-                                    name="Members[sessions]" id="session-1">
-                                Thematic session 1 - AGRICULTURAL TRADE FACILITATION IN LLDCs THROUGH WTO ACCESSION
-                                countries
-                            </label>
-                        </li>
-
-                        <li class="sessions__list-item">
-                            <label for="session-2">
-                                <input required class="registration__form-item session" value="2" type="radio"
-                                    name="Members[sessions]" id="session-2">
-                                Thematic session 2 - INVESTMENT OPPORTUNITIES IN AGRICULTURE
-                            </label>
-                        </li>
-
-                        <li class="sessions__list-item">
-                            <label for="session-3">
-                                <input required class="registration__form-item session" value="3" type="radio"
-                                    name="Members[sessions]" id="session-3">
-                                Thematic session 3 - FOSTERING PARTNERSHIPS WITH PRIVATE SECTOR FOR AGRICULTURAL
-                                MARKETABILITY
-                            </label>
-                        </li>
-
-                        <li class="sessions__list-item">
-                            <label for="session-4">
-                                <input required class="registration__form-item session" value="4" type="radio"
-                                    name="Members[sessions]" id="session-4">
-                                Thematic session 4 - FOOD SECURITY AND NUTRITION
-                            </label>
-                        </li>
-
-                        <li class="sessions__list-item">
-                            <label for="session-5">
-                                <input required class="registration__form-item session" value="5" type="radio"
-                                    name="Members[sessions]" id="session-5">
-                                Thematic session 5 - ENABLING ENVIRONMENT FOR THE SUSTAINIBLE AGRIFOOD SYSTEMS
-                                TRANSFORMATION FOCUSING ON CLIMATE CHANGE
-                            </label>
-                        </li>
-
-                        <li class="sessions__list-item">
-                            <label for="session-6">
-                                <input required class="registration__form-item session" value="6" type="radio"
-                                    name="Members[sessions]" id="session-6">
-                                Thematic session 6 - TECHNOLOGICAL INNOVATIONS
-                            </label>
-                        </li>
-
-
-                        <li class="sessions__list-item">
-                            <label for="sessisession-unknown">
-                                <input class="registration__form-item session" value="test" type="hidden"
-                                    name="Members[sessions2]" id="session-unknown">
-                            </label>
-                        </li>
-
-                    </ul>
-                </div> -->
 
                 <input required type="hidden" name="_csrf-backend"
                     value="zbwMnptXRjd6g-ZBZe3BgGdo6vFlTKyE5d6GCgLFINCHzm3x8BQyAA_ngQ4CnYf5Iz6SqDwDyty6uM5IcZIR6A==">
@@ -810,7 +742,7 @@
 
                 <a class="footer__contact-link" href="tel:998974280825">+99897 428 08 25</a>
 
-                <a class="footer__contact-link location" href="contacts.html"> INTERCONTINENTAL TASHKENT</a>
+                <a class="footer__contact-link location" href="contacts.html">Uzatom Agency</a>
 
             </div>
 
