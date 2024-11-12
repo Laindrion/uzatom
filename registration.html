@@ -530,7 +530,6 @@
                         </label>
                     </div>
 
-
                     <div class="col-lg-4">
                         <label class="registration__form-label" for="organisation">
                             <span id="org-text">Organisation</span>
@@ -553,6 +552,40 @@
                                 name="Members[work_address][0]" id="work-address">
                         </label>
                     </div>
+                    <!-- ACCOMPANYING PERSON-1 START -->
+                    <div class="form-inner" id="registration-person-1">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <label class="registration__form-label" for="work-phone-number">
+                                    Work phone number
+                                    <input required class="registration__form-item input" type="number"
+                                        name="Members[work_phone][0]" id="work-phone-number">
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ACCOMPANYING PERSON-2 START -->
+                    <div class="form-inner" id="registration-person-2">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <label class="registration__form-label" for="work-phone-number">
+                                    Work phone number
+                                    <input required class="registration__form-item input" type="number"
+                                        name="Members[work_phone][0]" id="work-phone-number">
+                                </label>
+                            </div>
+
+                            <div class="col-lg-4">
+                                <label class="registration__form-label" for="work-phone-number">
+                                    Accreditation certificate number
+                                    <input required class="registration__form-item input" type="text"
+                                        name="Members[accreditation_certificate][0]" id="work-phone-number">
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
 
                     <h4 class="registration__suptitle flight-info-title">
                         Arrival date in Uzbekistan
@@ -616,69 +649,29 @@
                                 type="checkbox">
                         </label>
                     </div>
-                </div>
 
-                <!-- ACCOMPANYING PERSON-1 START -->
-                <div class="form-inner" id="registration-person-1">
-                    <h4 class="registration__suptitle">
-                        For National Media
-                    </h4>
-                    <div class="row">
-                        <div class="col-lg-4">
-                            <label class="registration__form-label" for="work-phone-number">
-                                Work phone number
-                                <input required class="registration__form-item input" type="number"
-                                    name="Members[work_phone][0]" id="work-phone-number">
-                            </label>
-                        </div>
+                    <!-- REGISTRATION LINKS START -->
+                    <div class="form-inner registration__links" id="registration-links">
+                        <p>
+                            Dear Representatives of the Mass Media,
+                        </p>
+                        <p>
+                            The accreditation procedure for representatives of foreign mass media representatives in
+                            Uzbekistan is available here:
+                            <a href="https://mfa.uz/en/pages/accreditation">
+                                https://mfa.uz/en/pages/accreditation
+                            </a>
+                        </p>
                     </div>
-                </div>
 
-                <!-- ACCOMPANYING PERSON-2 START -->
-                <div class="form-inner" id="registration-person-2">
-                    <h4 class="registration__suptitle">
-                        For accreditated media
-                    </h4>
-                    <div class="row">
-                        <div class="col-lg-4">
-                            <label class="registration__form-label" for="work-phone-number">
-                                Work phone number
-                                <input required class="registration__form-item input" type="number"
-                                    name="Members[work_phone][0]" id="work-phone-number">
-                            </label>
-                        </div>
+                    <input required type="hidden" name="_csrf-backend"
+                        value="zbwMnptXRjd6g-ZBZe3BgGdo6vFlTKyE5d6GCgLFINCHzm3x8BQyAA_ngQ4CnYf5Iz6SqDwDyty6uM5IcZIR6A==">
+                    <!-- SESSIONS END -->
 
-                        <div class="col-lg-4">
-                            <label class="registration__form-label" for="work-phone-number">
-                                Accreditation certificate number
-                                <input required class="registration__form-item input" type="text"
-                                    name="Members[accreditation_certificate][0]" id="work-phone-number">
-                            </label>
-                        </div>
+                    <div class="col-12">
+                        <button class="registration__form-apply" type="submit" form="registration-form"
+                            id="registration-submit-btn">Register</button>
                     </div>
-                </div>
-
-                <!-- REGISTRATION LINKS START -->
-                <div class="form-inner registration__links" id="registration-links">
-                    <p>
-                        Dear Representatives of the Mass Media,
-                    </p>
-                    <p>
-                        The accreditation procedure for representatives of foreign mass media representatives in
-                        Uzbekistan is available here:
-                        <a href="https://mfa.uz/en/pages/accreditation">
-                            https://mfa.uz/en/pages/accreditation
-                        </a>
-                    </p>
-                </div>
-
-                <input required type="hidden" name="_csrf-backend"
-                    value="zbwMnptXRjd6g-ZBZe3BgGdo6vFlTKyE5d6GCgLFINCHzm3x8BQyAA_ngQ4CnYf5Iz6SqDwDyty6uM5IcZIR6A==">
-                <!-- SESSIONS END -->
-
-                <div class="col-12">
-                    <button class="registration__form-apply" type="submit" form="registration-form"
-                        id="registration-submit-btn">Register</button>
                 </div>
             </form>
         </div>
