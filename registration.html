@@ -179,24 +179,25 @@
                 <img src="images/footer.jpg" alt="section registration header">
             </div>
             <div class="container">
-                <h1 class="section__header-title title">
+                <h1 class="section__header-title title"
+                    style="font-size: 30px; line-height: 30px; max-width: 82rem; text-align: center;">
                     registration
+                    International Conference "Perspective use of nuclear energy for peaceful purposes in sustainable
+                    development of Organization of Islamic Cooperation member states: international and national
+                    experience"
                 </h1>
             </div>
         </div>
     </section>
     <section class="registration">
         <div class="container">
-            <h2 class="registration__title page__title">
-                FORM
-            </h2>
 
             <form action="https://adminicfs.agro.uz/api/data" class="registration__form" enctype="multipart/form-data"
                 id="registration-form">
                 <!-- INPUTS START -->
                 <div class="row" id="person">
 
-                    <div class="col-lg-4">
+                    <div class="col-lg-12">
                         <label class="registration__form-label" for="position">
                             Position
                             <select required id="position_select-0" class="registration__form-item select"
@@ -214,7 +215,7 @@
                         </label>
                     </div>
 
-                    <div class="col-lg-4">
+                    <div class="col-lg-12">
                         <label class="registration__form-label" for="name">
                             First name
                             <input required class="registration__form-item input" type="text" name="Members[name][0]"
@@ -222,7 +223,7 @@
                         </label>
                     </div>
 
-                    <div class="col-lg-4">
+                    <div class="col-lg-12">
                         <label class="registration__form-label" for="surname">
                             Surname
                             <input required class="registration__form-item input" type="text" name="Members[surname][0]"
@@ -230,7 +231,7 @@
                         </label>
                     </div>
 
-                    <div class="col-lg-4">
+                    <div class="col-lg-12">
                         <label class="registration__form-label" for="members-gender-0">
                             Gender
                             <select required id="members-gender-0" class="registration__form-item select"
@@ -242,7 +243,7 @@
                         </label>
                     </div>
 
-                    <div class="col-lg-4">
+                    <div class="col-lg-12">
                         <label class="registration__form-label" for="members-title-0">
                             Title
                             <select required id="members-title-0" class="registration__form-item select remove-on-media"
@@ -259,7 +260,7 @@
                         </label>
                     </div>
 
-                    <div class="col-lg-4">
+                    <div class="col-lg-12">
                         <label class="registration__form-label" for="title_option">
                             Enter your title
                             <input required class="registration__form-item input" type="text" name="Members[title][0]"
@@ -267,15 +268,15 @@
                         </label>
                     </div>
 
-                    <div class="col-lg-4">
+                    <div class="col-lg-12">
                         <label class="registration__form-label" for="date">
                             Date of birth
-                            <input class="registration__form-item input" type="date" data-role="calendarpicker"
-                                name="Members[birth_date][0]" id="date" required>
+                            <input class="registration__form-item input date_of_birth" type="date"
+                                data-role="calendarpicker" name="Members[birth_date][0]" id="date" required>
                         </label>
                     </div>
 
-                    <div class="col-lg-4">
+                    <div class="col-lg-12">
                         <label class="registration__form-label" for="email">
                             Email
                             <input class="registration__form-item input" type="email" name="Members[email][0]"
@@ -285,7 +286,7 @@
                         </label>
                     </div>
 
-                    <div class="col-lg-4">
+                    <div class="col-lg-12">
                         <label class="registration__form-label" for="phone">
                             Phone
                             <input required class="registration__form-item input" type="number" name="Members[phone][0]"
@@ -293,7 +294,7 @@
                         </label>
                     </div>
 
-                    <div class="col-lg-4">
+                    <div class="col-lg-12">
                         <label class="registration__form-label" for="country">
                             Country
                             <select required id="members-country" class="registration__form-item select remove-on-media"
@@ -500,29 +501,27 @@
                         </label>
                     </div>
 
-                    <div class="col-lg-4">
+                    <div class="col-lg-12">
                         <label class="registration__form-label file" for="photo">
                             <img src="images/table-photo.svg" alt="">
                             Upload your photo (jpeg/jpg/png):
                             <input class="form-file registration__form-item" type="file"
-                                accept=".png, .jpg, .jpeg, .pdf" name="Members[photo][0]" id="photo" max-size="2097152"
-                                required>
+                                accept=".png, .jpg, .jpeg, .pdf" name="Members[photo][0]" id="photo" required>
                         </label>
                     </div>
 
-                    <div class="col-lg-4">
+                    <div class="col-lg-12">
                         <label class="registration__form-label file" for="passport">
                             <img src="images/table-photo.svg" alt="">
                             Upload copy of your passport (jpeg/jpg/png):
                             <input class="form-file registration__form-item" type="file"
-                                accept=".png, .jpg, .jpeg, .pdf" name="Members[passport][0]" id="passport"
-                                max-size="2097152" required>
+                                accept=".png, .jpg, .jpeg, .pdf" name="Members[passport][0]" id="passport" required>
                         </label>
                     </div>
 
-                    <div class="col-lg-4"></div>
+                    <div class="col-lg-12"></div>
 
-                    <div class="col-lg-4">
+                    <div class="col-lg-12">
                         <label class="registration__form-label" for="passoport-id">
                             Passport ID
                             <input required class="registration__form-item input" type="text"
@@ -530,7 +529,7 @@
                         </label>
                     </div>
 
-                    <div class="col-lg-4">
+                    <div class="col-lg-12">
                         <label class="registration__form-label" for="organisation">
                             <span id="org-text">Organisation</span>
                             <input required class="registration__form-item input" type="text"
@@ -538,14 +537,14 @@
                         </label>
                     </div>
 
-                    <div class="col-lg-4">
+                    <div class="col-lg-12">
                         <label class="registration__form-label" for="job-title">
                             Job title
                             <input required class="registration__form-item input" type="text"
                                 name="Members[job_title][0]" id="job-title">
                         </label>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-12">
                         <label class="registration__form-label" for="work-address">
                             Work address
                             <input required class="registration__form-item input" type="text"
@@ -555,7 +554,7 @@
                     <!-- ACCOMPANYING PERSON-1 START -->
                     <div class="form-inner" id="registration-person-1">
                         <div class="row">
-                            <div class="col-lg-4">
+                            <div class="col-lg-12">
                                 <label class="registration__form-label" for="work-phone-number">
                                     Work phone number
                                     <input required class="registration__form-item input" type="number"
@@ -568,7 +567,7 @@
                     <!-- ACCOMPANYING PERSON-2 START -->
                     <div class="form-inner" id="registration-person-2">
                         <div class="row">
-                            <div class="col-lg-4">
+                            <div class="col-lg-12">
                                 <label class="registration__form-label" for="work-phone-number">
                                     Work phone number
                                     <input required class="registration__form-item input" type="number"
@@ -576,7 +575,7 @@
                                 </label>
                             </div>
 
-                            <div class="col-lg-4">
+                            <div class="col-lg-12">
                                 <label class="registration__form-label" for="work-phone-number">
                                     Accreditation certificate number
                                     <input required class="registration__form-item input" type="text"
@@ -590,7 +589,7 @@
                     <h4 class="registration__suptitle flight-info-title">
                         Arrival date in Uzbekistan
                     </h4>
-                    <div class="col-lg-4">
+                    <div class="col-lg-12">
                         <label class="registration__form-label" for="date-of-arrival">
                             Date
                             <input class="registration__form-item input flight-info" type="date-of-arrival"
@@ -598,7 +597,7 @@
                         </label>
                     </div>
 
-                    <div class="col-lg-4">
+                    <div class="col-lg-12">
                         <label class="registration__form-label" for="city-of-arrival">
                             City of arrival
                             <input required class="registration__form-item input flight-info" type="text"
@@ -606,7 +605,7 @@
                         </label>
                     </div>
 
-                    <div class="col-lg-4">
+                    <div class="col-lg-12">
                         <label class="registration__form-label" for="flight-number">
                             Flight number
                             <input required class="registration__form-item input flight-info" type="number"
@@ -617,7 +616,7 @@
                     <h4 class="registration__suptitle flight-info-title">
                         Departure date from Uzbekistan
                     </h4>
-                    <div class="col-lg-4">
+                    <div class="col-lg-12">
                         <label class="registration__form-label" for="date-of-departure">
                             Date
                             <input class="registration__form-item input flight-info" type="date-of-departure"
@@ -626,7 +625,7 @@
                         </label>
                     </div>
 
-                    <div class="col-lg-4">
+                    <div class="col-lg-12">
                         <label class="registration__form-label" for="city-of-departure">
                             Departure city
                             <input required class="registration__form-item input flight-info" type="text"
@@ -634,7 +633,7 @@
                         </label>
                     </div>
 
-                    <div class="col-lg-4">
+                    <div class="col-lg-12">
                         <label class="registration__form-label" for="flight-number-departure">
                             Flight number
                             <input required class="registration__form-item input flight-info" type="number"
@@ -642,7 +641,7 @@
                         </label>
                     </div>
 
-                    <div class="col-lg-4">
+                    <div class="col-lg-12">
                         <label class="registration__form-label" for="">
                             Do you need a visa to enter Uzbekistan?
                             <input class="registration__form-item checkbox flight-info" name="Members[visa][0]"
