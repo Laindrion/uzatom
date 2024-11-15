@@ -47,29 +47,17 @@
                             <li class="menu__list-item inner">
                                 <ul class="menu__top-list">
                                     <li class="menu__top-list__item">
-                                        <div class="nav-logo two-logos">
-                                            <img src="images/two-logo.png" alt="">
-                                        </div>
-                                    </li>
-
-                                    <li class="menu__top-list__item">
-                                        <div class="nav-logo logo-agriculture">
-                                            <img src="images/agriculture-logo.png" alt="">
-                                        </div>
-                                    </li>
-
-                                    <li>
-                                        <div class="nav-logo logo-lldc">
+                                        <div class="nav-logo">
                                             <img src="images/logo.svg" alt="">
                                         </div>
                                     </li>
                                 </ul>
                             </li>
-                            <li class="menu__list-item">
+                          <!--   <li class="menu__list-item">
                                 <a class="menu__list-link active" href="index.html">
                                     MAIN
                                 </a>
-                            </li>
+                            </li> -->
                             <li class="menu__list-item">
                                 <a class="menu__list-link" href="about.html">
                                     ABOUT ATOM
@@ -103,6 +91,12 @@
                                     </li>
 
                                 </ul>
+                            </li>
+
+                            <li class="menu__list-item logo">
+                                <a class="menu__list-link logo" href="index.html">
+                                    <img src="images/logo.svg" alt="logo">
+                                </a>
                             </li>
 
                             <li class="menu__list-item">
@@ -178,30 +172,34 @@
             <div class="section__header-img">
                 <img src="images/footer.jpg" alt="section registration header">
             </div>
-            <div class="container">
-                <h1 class="section__header-title title"
-                    style="font-size: 30px; line-height: 30px; max-width: 82rem; text-align: center;">
-                    registration
-                    International Conference "Perspective use of nuclear energy for peaceful purposes in sustainable
-                    development of Organization of Islamic Cooperation member states: international and national
-                    experience"
-                </h1>
-            </div>
+            <h1 class="section__header-title title" style="
+            font-size: 30px; 
+            line-height: 30px;
+            max-width: 82rem; 
+            text-align: center;
+            padding-top: 20px; 
+            margin: 0 auto; left: 
+            50%; transform: translate(-50%, -50%);
+            ">
+                registration for International Conference
+                <br>
+                "Perspective use of nuclear energy for peaceful purposes in sustainable
+                development of Organization of Islamic Cooperation member states: international and national
+                experience"
+            </h1>
         </div>
     </section>
     <section class="registration">
         <div class="container">
 
-            <form action="https://confadmin.uzatom.uz/api/data" class="registration__form" enctype="multipart/form-data"
-                id="registration-form">
+            <form action="https://confadmin.uzatom.uz/api/data" class="registration__form" enctype="multipart/form-data" id="registration-form">
                 <!-- INPUTS START -->
                 <div class="row" id="person">
 
                     <div class="col-lg-12">
                         <label class="registration__form-label" for="position">
                             Position
-                            <select required id="position_select-0" class="registration__form-item select"
-                                name="Members[position][0]">
+                            <select required id="position_select-0" class="registration__form-item select" name="Members[position][0]">
                                 <option value="">Choose participation role</option>
                                 <option value="Attendee">Attendee</option>
                                 <option value="Speaker">Speaker</option>
@@ -218,24 +216,21 @@
                     <div class="col-lg-12">
                         <label class="registration__form-label" for="name">
                             First name
-                            <input required class="registration__form-item input" type="text" name="Members[name][0]"
-                                id="name">
+                            <input required class="registration__form-item input" type="text" name="Members[name][0]" id="name">
                         </label>
                     </div>
 
                     <div class="col-lg-12">
                         <label class="registration__form-label" for="surname">
                             Surname
-                            <input required class="registration__form-item input" type="text" name="Members[surname][0]"
-                                id="surname">
+                            <input required class="registration__form-item input" type="text" name="Members[surname][0]" id="surname">
                         </label>
                     </div>
 
                     <div class="col-lg-12">
                         <label class="registration__form-label" for="members-gender-0">
                             Gender
-                            <select required id="members-gender-0" class="registration__form-item select"
-                                name="Members[gender][0]">
+                            <select required id="members-gender-0" class="registration__form-item select" name="Members[gender][0]">
                                 <option value="">Select Gender</option>
                                 <option value="1">Male</option>
                                 <option value="2">Female</option>
@@ -246,8 +241,7 @@
                     <div class="col-lg-12">
                         <label class="registration__form-label" for="members-title-0">
                             Title
-                            <select required id="members-title-0" class="registration__form-item select remove-on-media"
-                                name="Members[title][0]">
+                            <select required id="members-title-0" class="registration__form-item select remove-on-media" name="Members[title][0]">
                                 <option value="">Select Title</option>
                                 <option value="1">Mr.</option>
                                 <option value="2">Mrs.</option>
@@ -263,24 +257,21 @@
                     <div class="col-lg-12">
                         <label class="registration__form-label" for="title_option">
                             Enter your title
-                            <input required class="registration__form-item input" type="text" name="Members[title][0]"
-                                id="title_option">
+                            <input required class="registration__form-item input" type="text" name="Members[title_other][0]" id="title_option">
                         </label>
                     </div>
 
                     <div class="col-lg-12">
                         <label class="registration__form-label" for="date">
                             Date of birth
-                            <input class="registration__form-item input date_of_birth" type="date"
-                                data-role="calendarpicker" name="Members[birth_date][0]" id="date" required>
+                            <input class="registration__form-item input date_of_birth" type="date" data-role="calendarpicker" name="Members[birth_date][0]" id="date" required>
                         </label>
                     </div>
 
                     <div class="col-lg-12">
                         <label class="registration__form-label" for="email">
                             Email
-                            <input class="registration__form-item input" type="email" name="Members[email][0]"
-                                id="email" requiredы>
+                            <input class="registration__form-item input" type="email" name="Members[email][0]" id="email" requiredы>
 
                             <span class="">*Important, all relevant information will be sent to this address</span>
                         </label>
@@ -289,16 +280,14 @@
                     <div class="col-lg-12">
                         <label class="registration__form-label" for="phone">
                             Phone
-                            <input required class="registration__form-item input" type="number" name="Members[phone][0]"
-                                id="phone">
+                            <input required class="registration__form-item input" type="number" name="Members[phone][0]" id="phone">
                         </label>
                     </div>
 
                     <div class="col-lg-12">
                         <label class="registration__form-label" for="country">
                             Country
-                            <select required id="members-country" class="registration__form-item select remove-on-media"
-                                name="Members[country][0]">
+                            <select required id="members-country" class="registration__form-item select remove-on-media" name="Members[country][0]">
                                 <option value="">Select Country</option>
                                 <option value="98">Australia</option>
                                 <option value="99">Austria</option>
@@ -505,8 +494,7 @@
                         <label class="registration__form-label file" for="photo">
                             <img src="images/table-photo.svg" alt="">
                             Upload your photo (jpeg/jpg/png):
-                            <input class="form-file registration__form-item" type="file"
-                                accept=".png, .jpg, .jpeg, .pdf" name="Members[photo][0]" id="photo" required>
+                            <input class="form-file registration__form-item" type="file" accept=".png, .jpg, .jpeg, .pdf" name="Members[photo][0]" id="photo" required>
                         </label>
                     </div>
 
@@ -514,8 +502,7 @@
                         <label class="registration__form-label file" for="passport">
                             <img src="images/table-photo.svg" alt="">
                             Upload copy of your passport (jpeg/jpg/png):
-                            <input class="form-file registration__form-item" type="file"
-                                accept=".png, .jpg, .jpeg, .pdf" name="Members[passport][0]" id="passport" required>
+                            <input class="form-file registration__form-item" type="file" accept=".png, .jpg, .jpeg, .pdf" name="Members[passport][0]" id="passport" required>
                         </label>
                     </div>
 
@@ -524,31 +511,27 @@
                     <div class="col-lg-12">
                         <label class="registration__form-label" for="passoport-id">
                             Passport ID
-                            <input required class="registration__form-item input" type="text"
-                                name="Members[passportID][0]" id="passoport-id">
+                            <input required class="registration__form-item input" type="text" name="Members[passportID][0]" id="passoport-id">
                         </label>
                     </div>
 
                     <div class="col-lg-12">
                         <label class="registration__form-label" for="organisation">
                             <span id="org-text">Organisation</span>
-                            <input required class="registration__form-item input" type="text"
-                                name="Members[organization][0]" id="organisation">
+                            <input required class="registration__form-item input" type="text" name="Members[organization][0]" id="organisation">
                         </label>
                     </div>
 
                     <div class="col-lg-12">
                         <label class="registration__form-label" for="job-title">
                             Job title
-                            <input required class="registration__form-item input" type="text"
-                                name="Members[job_title][0]" id="job-title">
+                            <input required class="registration__form-item input" type="text" name="Members[job_title][0]" id="job-title">
                         </label>
                     </div>
                     <div class="col-lg-12">
                         <label class="registration__form-label" for="work-address">
                             Work address
-                            <input required class="registration__form-item input" type="text"
-                                name="Members[work_address][0]" id="work-address">
+                            <input required class="registration__form-item input" type="text" name="Members[work_address][0]" id="work-address">
                         </label>
                     </div>
                     <!-- ACCOMPANYING PERSON-1 START -->
@@ -557,8 +540,7 @@
                             <div class="col-lg-12">
                                 <label class="registration__form-label" for="work-phone-number">
                                     Work phone number
-                                    <input required class="registration__form-item input" type="number"
-                                        name="Members[work_phone][0]" id="work-phone-number">
+                                    <input required class="registration__form-item input" type="number" name="Members[work_phone][0]" id="work-phone-number">
                                 </label>
                             </div>
                         </div>
@@ -570,16 +552,14 @@
                             <div class="col-lg-12">
                                 <label class="registration__form-label" for="work-phone-number">
                                     Work phone number
-                                    <input required class="registration__form-item input" type="number"
-                                        name="Members[work_phone][0]" id="work-phone-number">
+                                    <input required class="registration__form-item input" type="number" name="Members[work_phone][0]" id="work-phone-number">
                                 </label>
                             </div>
 
                             <div class="col-lg-12">
                                 <label class="registration__form-label" for="work-phone-number">
                                     Accreditation certificate number
-                                    <input required class="registration__form-item input" type="text"
-                                        name="Members[accreditation_certificate][0]" id="work-phone-number">
+                                    <input required class="registration__form-item input" type="text" name="Members[accreditation_certificate][0]" id="work-phone-number">
                                 </label>
                             </div>
                         </div>
@@ -592,24 +572,21 @@
                     <div class="col-lg-12">
                         <label class="registration__form-label" for="date-of-arrival">
                             Date
-                            <input class="registration__form-item input flight-info" type="date-of-arrival"
-                                data-role="calendarpicker" name="Members[arrival_date][0]" id="date" disabled required>
+                            <input class="registration__form-item input flight-info" type="date-of-arrival" data-role="calendarpicker" name="Members[arrival_date][0]" id="date" disabled required>
                         </label>
                     </div>
 
                     <div class="col-lg-12">
                         <label class="registration__form-label" for="city-of-arrival">
                             City of arrival
-                            <input required class="registration__form-item input flight-info" type="text"
-                                name="Members[arrival_city][0]" id="city-of-arrival" disabled>
+                            <input required class="registration__form-item input flight-info" type="text" name="Members[arrival_city][0]" id="city-of-arrival" disabled>
                         </label>
                     </div>
 
                     <div class="col-lg-12">
                         <label class="registration__form-label" for="flight-number">
                             Flight number
-                            <input required class="registration__form-item input flight-info" type="number"
-                                name="Members[arrival_flight_number][0]" id="flight-number" disabled>
+                            <input required class="registration__form-item input flight-info" type="number" name="Members[arrival_flight_number][0]" id="flight-number" disabled>
                         </label>
                     </div>
 
@@ -619,33 +596,28 @@
                     <div class="col-lg-12">
                         <label class="registration__form-label" for="date-of-departure">
                             Date
-                            <input class="registration__form-item input flight-info" type="date-of-departure"
-                                data-role="calendarpicker" name="Members[departure_date][0]" id="date" disabled
-                                required>
+                            <input class="registration__form-item input flight-info" type="date-of-departure" data-role="calendarpicker" name="Members[departure_date][0]" id="date" disabled required>
                         </label>
                     </div>
 
                     <div class="col-lg-12">
                         <label class="registration__form-label" for="city-of-departure">
                             Departure city
-                            <input required class="registration__form-item input flight-info" type="text"
-                                name="Members[departure_city][0]" id="city-of-departure" disabled>
+                            <input required class="registration__form-item input flight-info" type="text" name="Members[departure_city][0]" id="city-of-departure" disabled>
                         </label>
                     </div>
 
                     <div class="col-lg-12">
                         <label class="registration__form-label" for="flight-number-departure">
                             Flight number
-                            <input required class="registration__form-item input flight-info" type="number"
-                                name="Members[departure_flight_number][0]" id="flight-number-departure" disabled>
+                            <input required class="registration__form-item input flight-info" type="number" name="Members[departure_flight_number][0]" id="flight-number-departure" disabled>
                         </label>
                     </div>
 
                     <div class="col-lg-12">
                         <label class="registration__form-label" for="">
                             Do you need a visa to enter Uzbekistan?
-                            <input class="registration__form-item checkbox flight-info" name="Members[visa][0]"
-                                type="checkbox">
+                            <input class="registration__form-item checkbox flight-info" name="Members[visa][0]" type="checkbox" value="1">
                         </label>
                     </div>
 
@@ -663,13 +635,11 @@
                         </p>
                     </div>
 
-                    <input required type="hidden" name="_csrf-backend"
-                        value="zbwMnptXRjd6g-ZBZe3BgGdo6vFlTKyE5d6GCgLFINCHzm3x8BQyAA_ngQ4CnYf5Iz6SqDwDyty6uM5IcZIR6A==">
+                    <input required type="hidden" name="_csrf-backend" value="zbwMnptXRjd6g-ZBZe3BgGdo6vFlTKyE5d6GCgLFINCHzm3x8BQyAA_ngQ4CnYf5Iz6SqDwDyty6uM5IcZIR6A==">
                     <!-- SESSIONS END -->
 
                     <div class="col-12">
-                        <button class="registration__form-apply" type="submit" form="registration-form"
-                            id="registration-submit-btn">Register</button>
+                        <button class="registration__form-apply" type="submit" form="registration-form" id="registration-submit-btn">Register</button>
                     </div>
                 </div>
             </form>
