@@ -48,12 +48,14 @@
                                 <ul class="menu__top-list">
                                     <li class="menu__top-list__item">
                                         <div class="nav-logo">
-                                            <img src="images/logo.svg" alt="">
+                                            <a href="index.html">
+                                                <img src="images/logo.svg" alt="">
+                                            </a>
                                         </div>
                                     </li>
                                 </ul>
                             </li>
-                          <!--   <li class="menu__list-item">
+                            <!--   <li class="menu__list-item">
                                 <a class="menu__list-link active" href="index.html">
                                     MAIN
                                 </a>
@@ -64,9 +66,17 @@
                                 </a>
                             </li>
                             <li class="menu__list-item">
-                                <a class="menu__list-link" href="#">
+                                <a class="menu__list-link" href="about-event.html">
                                     ABOUT EVENT
                                 </a>
+
+                                <ul>
+                                    <li>
+                                        <a href="conception.html">
+                                            Conecption
+                                        </a>
+                                    </li>
+                                </ul>
                             </li>
                             <li class="menu__list-item">
                                 <a class="menu__list-link" href="#">
@@ -172,7 +182,7 @@
             <div class="section__header-img">
                 <img src="images/footer.jpg" alt="section registration header">
             </div>
-            <h1 class="section__header-title title" style="
+            <h1 class="section__header-title title registration__section-title" style="
             font-size: 30px; 
             line-height: 30px;
             max-width: 82rem; 
@@ -216,14 +226,14 @@
                     <div class="col-lg-12">
                         <label class="registration__form-label" for="name">
                             First name
-                            <input required class="registration__form-item input" type="text" name="Members[name][0]" id="name">
+                            <input required class="registration__form-item input" type="text" name="Members[name][0]" id="name" placeholder="Enter your name">
                         </label>
                     </div>
 
                     <div class="col-lg-12">
                         <label class="registration__form-label" for="surname">
                             Surname
-                            <input required class="registration__form-item input" type="text" name="Members[surname][0]" id="surname">
+                            <input required class="registration__form-item input" type="text" name="Members[surname][0]" id="surname" placeholder="Enter your surname">
                         </label>
                     </div>
 
@@ -257,21 +267,21 @@
                     <div class="col-lg-12">
                         <label class="registration__form-label" for="title_option">
                             Enter your title
-                            <input required class="registration__form-item input" type="text" name="Members[title_other][0]" id="title_option">
+                            <input required class="registration__form-item input" type="text" name="Members[title_other][0]" id="title_option" placeholder="Enter your title">
                         </label>
                     </div>
 
                     <div class="col-lg-12">
                         <label class="registration__form-label" for="date">
                             Date of birth
-                            <input class="registration__form-item input date_of_birth" type="date" data-role="calendarpicker" name="Members[birth_date][0]" id="date" required>
+                            <input class="registration__form-item input date_of_birth" type="date" data-role="calendarpicker" name="Members[birth_date][0]" id="date" placeholder="Choose your birth date" required>
                         </label>
                     </div>
 
                     <div class="col-lg-12">
                         <label class="registration__form-label" for="email">
                             Email
-                            <input class="registration__form-item input" type="email" name="Members[email][0]" id="email" requiredы>
+                            <input class="registration__form-item input" type="email" name="Members[email][0]" id="email" placeholder="Enter your email" required>
 
                             <span class="">*Important, all relevant information will be sent to this address</span>
                         </label>
@@ -280,7 +290,7 @@
                     <div class="col-lg-12">
                         <label class="registration__form-label" for="phone">
                             Phone
-                            <input required class="registration__form-item input" type="number" name="Members[phone][0]" id="phone">
+                            <input required class="registration__form-item input" type="number" name="Members[phone][0]" placeholder="Enter your phone" id="phone">
                         </label>
                     </div>
 
@@ -511,27 +521,27 @@
                     <div class="col-lg-12">
                         <label class="registration__form-label" for="passoport-id">
                             Passport ID
-                            <input required class="registration__form-item input" type="text" name="Members[passportID][0]" id="passoport-id">
+                            <input required class="registration__form-item input" type="text" name="Members[passportID][0]" placeholder="Enter your passoport id" id="passoport-id">
                         </label>
                     </div>
 
                     <div class="col-lg-12">
                         <label class="registration__form-label" for="organisation">
                             <span id="org-text">Organisation</span>
-                            <input required class="registration__form-item input" type="text" name="Members[organization][0]" id="organisation">
+                            <input required class="registration__form-item input" type="text" name="Members[organization][0]" placeholder="Enter your organisation" id="organisation">
                         </label>
                     </div>
 
                     <div class="col-lg-12">
                         <label class="registration__form-label" for="job-title">
                             Job title
-                            <input required class="registration__form-item input" type="text" name="Members[job_title][0]" id="job-title">
+                            <input required class="registration__form-item input" type="text" name="Members[job_title][0]" placeholder="Enter your job title" id="job-title">
                         </label>
                     </div>
                     <div class="col-lg-12">
                         <label class="registration__form-label" for="work-address">
                             Work address
-                            <input required class="registration__form-item input" type="text" name="Members[work_address][0]" id="work-address">
+                            <input required class="registration__form-item input" type="text" name="Members[work_address][0]" placeholder="Enter your job work address" id="work-address">
                         </label>
                     </div>
                     <!-- ACCOMPANYING PERSON-1 START -->
@@ -540,7 +550,7 @@
                             <div class="col-lg-12">
                                 <label class="registration__form-label" for="work-phone-number">
                                     Work phone number
-                                    <input required class="registration__form-item input" type="number" name="Members[work_phone][0]" id="work-phone-number">
+                                    <input required class="registration__form-item input" type="number" name="Members[work_phone][0]" placeholder="Enter your job work phone number" id="work-phone-number">
                                 </label>
                             </div>
                         </div>
@@ -552,14 +562,14 @@
                             <div class="col-lg-12">
                                 <label class="registration__form-label" for="work-phone-number">
                                     Work phone number
-                                    <input required class="registration__form-item input" type="number" name="Members[work_phone][0]" id="work-phone-number">
+                                    <input required class="registration__form-item input" type="number" name="Members[work_phone][0]" placeholder="Enter your job work phone number" id="work-phone-number">
                                 </label>
                             </div>
 
                             <div class="col-lg-12">
                                 <label class="registration__form-label" for="work-phone-number">
                                     Accreditation certificate number
-                                    <input required class="registration__form-item input" type="text" name="Members[accreditation_certificate][0]" id="work-phone-number">
+                                    <input required class="registration__form-item input" type="text" name="Members[accreditation_certificate][0]" placeholder="Enter your accreditation certificate number" id="work-phone-number">
                                 </label>
                             </div>
                         </div>
@@ -572,14 +582,14 @@
                     <div class="col-lg-12">
                         <label class="registration__form-label" for="date-of-arrival">
                             Date
-                            <input class="registration__form-item input flight-info" type="date-of-arrival" data-role="calendarpicker" name="Members[arrival_date][0]" id="date" disabled required>
+                            <input class="registration__form-item input flight-info" type="date-of-arrival" data-role="calendarpicker" name="Members[arrival_date][0]" placeholder="Choose your arrival date" id="date" disabled required>
                         </label>
                     </div>
 
                     <div class="col-lg-12">
                         <label class="registration__form-label" for="city-of-arrival">
                             City of arrival
-                            <input required class="registration__form-item input flight-info" type="text" name="Members[arrival_city][0]" id="city-of-arrival" disabled>
+                            <input required class="registration__form-item input flight-info" type="text" name="Members[arrival_city][0]" placeholder="Enter your city of arrival" id="city-of-arrival" disabled>
                         </label>
                     </div>
 
@@ -665,7 +675,7 @@
                 <br>
                 We will contact you as soon as possible after verifying the data you entered during the application.
                 <br>
-                Look for an email from ICFS now. Check your spam, junk, or promotions folder if you can't find the
+                Check your spam, junk, or promotions folder if you can't find the
                 e-mail.
                 <br>
                 Important!
@@ -714,6 +724,40 @@
                 <a class="footer__contact-link" href="tel:998974280825">+99897 428 08 25</a>
 
                 <a class="footer__contact-link location" href="contacts.html">Uzatom Agency</a>
+
+            </div>
+
+            <div class="socials">
+
+                <a href="https://youtube.com/channel/UCjN-A6SJYSaEpEOONekIgmQ">
+
+                    <img src="images/youtube.svg" alt="youtube">
+
+                </a>
+
+                <a href="https://instagram.com/uzatominfo?utm_medium=copy_link">
+
+                    <img src="images/instagram.svg" alt="instagram">
+
+                </a>
+
+                <a href="https://t.me/uzatom_info">
+
+                    <img src="images/telegram.svg" alt="telegram">
+
+                </a>
+
+                <a href="https://x.com/uzatomagency">
+
+                    <img src="images/twitter.svg" alt="twitter">
+
+                </a>
+
+                <a href="https://www.facebook.com/uzatom/">
+
+                    <img src="images/facebook.svg" alt="facebook">
+
+                </a>
 
             </div>
 
