@@ -183,14 +183,16 @@
     <section class="registration">
         <div class="container">
 
-            <form action="https://confadmin.uzatom.uz/api/data" class="registration__form" enctype="multipart/form-data" id="registration-form">
+            <form action="https://confadmin.uzatom.uz/api/data" class="registration__form" enctype="multipart/form-data"
+                id="registration-form">
                 <!-- INPUTS START -->
                 <div class="row" id="person">
 
                     <div class="col-lg-12">
                         <label class="registration__form-label" for="position">
                             Position
-                            <select required id="position_select-0" class="registration__form-item select" name="Members[position][0]">
+                            <select required id="position_select-0" class="registration__form-item select"
+                                name="Members[position][0]">
                                 <option value="">Choose participation role</option>
                                 <option value="Attendee">Attendee</option>
                                 <option value="Speaker">Speaker</option>
@@ -207,21 +209,24 @@
                     <div class="col-lg-12">
                         <label class="registration__form-label" for="name">
                             First name
-                            <input required class="registration__form-item input" type="text" name="Members[name][0]" id="name" placeholder="Enter your name">
+                            <input required class="registration__form-item input" type="text" name="Members[name][0]"
+                                id="name" placeholder="Enter your name">
                         </label>
                     </div>
 
                     <div class="col-lg-12">
                         <label class="registration__form-label" for="surname">
                             Surname
-                            <input required class="registration__form-item input" type="text" name="Members[surname][0]" id="surname" placeholder="Enter your surname">
+                            <input required class="registration__form-item input" type="text" name="Members[surname][0]"
+                                id="surname" placeholder="Enter your surname">
                         </label>
                     </div>
 
                     <div class="col-lg-12">
                         <label class="registration__form-label" for="members-gender-0">
                             Gender
-                            <select required id="members-gender-0" class="registration__form-item select" name="Members[gender][0]">
+                            <select required id="members-gender-0" class="registration__form-item select"
+                                name="Members[gender][0]">
                                 <option value="">Select Gender</option>
                                 <option value="1">Male</option>
                                 <option value="2">Female</option>
@@ -232,7 +237,8 @@
                     <div class="col-lg-12">
                         <label class="registration__form-label" for="members-title-0">
                             Title
-                            <select required id="members-title-0" class="registration__form-item select remove-on-media" name="Members[title][0]">
+                            <select required id="members-title-0" class="registration__form-item select remove-on-media"
+                                name="Members[title][0]">
                                 <option value="">Select Title</option>
                                 <option value="1">Mr.</option>
                                 <option value="2">Mrs.</option>
@@ -248,37 +254,44 @@
                     <div class="col-lg-12">
                         <label class="registration__form-label" for="title_option">
                             Enter your title
-                            <input required class="registration__form-item input" type="text" name="Members[title_other][0]" id="title_option" placeholder="Enter your title">
+                            <input required class="registration__form-item input" type="text"
+                                name="Members[title_other][0]" id="title_option" placeholder="Enter your title">
                         </label>
                     </div>
 
                     <div class="col-lg-12">
                         <label class="registration__form-label" for="date">
                             Date of birth
-                            <input class="registration__form-item input date_of_birth" type="date" data-role="calendarpicker" name="Members[birth_date][0]" id="date" placeholder="Choose your birth date" required>
+                            <input class="registration__form-item input date_of_birth" type="date"
+                                data-role="calendarpicker" name="Members[birth_date][0]" id="date"
+                                placeholder="Choose your birth date" required>
                         </label>
                     </div>
 
                     <div class="col-lg-12">
                         <label class="registration__form-label" for="email">
                             Email
-                            <input class="registration__form-item input" type="email" name="Members[email][0]" id="email" placeholder="Enter your email" required>
+                            <input class="registration__form-item input" type="email" name="Members[email][0]"
+                                id="email" placeholder="Enter your email" required>
 
-                            <span class="">*Important, all relevant information will be sent to this address (gmail.com, mail.ru, yahoo.com, rambler.ru, outlook.com are available for registration)</span>
+                            <span class="">*Important, all relevant information will be sent to this address (gmail.com,
+                                mail.ru, yahoo.com, rambler.ru, outlook.com are available for registration)</span>
                         </label>
                     </div>
 
                     <div class="col-lg-12">
                         <label class="registration__form-label" for="phone">
                             Phone
-                            <input required class="registration__form-item input" type="number" name="Members[phone][0]" placeholder="Enter your phone" id="phone">
+                            <input required class="registration__form-item input" type="number" name="Members[phone][0]"
+                                placeholder="Enter your phone" id="phone">
                         </label>
                     </div>
 
                     <div class="col-lg-12">
                         <label class="registration__form-label" for="country">
                             Country
-                            <select required id="members-country" class="registration__form-item select remove-on-media" name="Members[country][0]">
+                            <select required id="members-country" class="registration__form-item select remove-on-media"
+                                name="Members[country][0]">
                                 <option value="">Select Country</option>
                                 <option value="98">Australia</option>
                                 <option value="99">Austria</option>
@@ -485,7 +498,8 @@
                         <label class="registration__form-label file" for="photo">
                             <img src="images/table-photo.svg" alt="">
                             Upload your photo (jpeg/jpg/png):
-                            <input class="form-file registration__form-item" type="file" accept=".png, .jpg, .jpeg, .pdf" name="Members[photo][0]" id="photo" required>
+                            <input class="form-file registration__form-item" type="file"
+                                accept=".png, .jpg, .jpeg, .pdf" name="Members[photo][0]" id="photo" required>
                         </label>
                     </div>
 
@@ -493,7 +507,8 @@
                         <label class="registration__form-label file" for="passport">
                             <img src="images/table-photo.svg" alt="">
                             Upload copy of your passport (jpeg/jpg/png):
-                            <input class="form-file registration__form-item" type="file" accept=".png, .jpg, .jpeg, .pdf" name="Members[passport][0]" id="passport" required>
+                            <input class="form-file registration__form-item" type="file"
+                                accept=".png, .jpg, .jpeg, .pdf" name="Members[passport][0]" id="passport" required>
                         </label>
                     </div>
 
@@ -502,27 +517,32 @@
                     <div class="col-lg-12">
                         <label class="registration__form-label" for="passoport-id">
                             Passport ID
-                            <input required class="registration__form-item input" type="text" name="Members[passportID][0]" placeholder="Enter your passoport id" id="passoport-id">
+                            <input required class="registration__form-item input" type="text"
+                                name="Members[passportID][0]" placeholder="Enter your passoport id" id="passoport-id">
                         </label>
                     </div>
 
                     <div class="col-lg-12">
                         <label class="registration__form-label" for="organisation">
                             <span id="org-text">Organisation</span>
-                            <input required class="registration__form-item input" type="text" name="Members[organization][0]" placeholder="Enter your organisation" id="organisation">
+                            <input required class="registration__form-item input" type="text"
+                                name="Members[organization][0]" placeholder="Enter your organisation" id="organisation">
                         </label>
                     </div>
 
                     <div class="col-lg-12">
                         <label class="registration__form-label" for="job-title">
                             Job title
-                            <input required class="registration__form-item input" type="text" name="Members[job_title][0]" placeholder="Enter your job title" id="job-title">
+                            <input required class="registration__form-item input" type="text"
+                                name="Members[job_title][0]" placeholder="Enter your job title" id="job-title">
                         </label>
                     </div>
                     <div class="col-lg-12">
                         <label class="registration__form-label" for="work-address">
                             Work address
-                            <input required class="registration__form-item input" type="text" name="Members[work_address][0]" placeholder="Enter your job work address" id="work-address">
+                            <input required class="registration__form-item input" type="text"
+                                name="Members[work_address][0]" placeholder="Enter your job work address"
+                                id="work-address">
                         </label>
                     </div>
                     <!-- ACCOMPANYING PERSON-1 START -->
@@ -531,7 +551,9 @@
                             <div class="col-lg-12">
                                 <label class="registration__form-label" for="work-phone-number">
                                     Work phone number
-                                    <input required class="registration__form-item input" type="number" name="Members[work_phone][0]" placeholder="Enter your job work phone number" id="work-phone-number">
+                                    <input required class="registration__form-item input" type="number"
+                                        name="Members[work_phone][0]" placeholder="Enter your job work phone number"
+                                        id="work-phone-number">
                                 </label>
                             </div>
                         </div>
@@ -543,14 +565,19 @@
                             <div class="col-lg-12">
                                 <label class="registration__form-label" for="work-phone-number">
                                     Work phone number
-                                    <input required class="registration__form-item input" type="number" name="Members[work_phone][0]" placeholder="Enter your job work phone number" id="work-phone-number">
+                                    <input required class="registration__form-item input" type="number"
+                                        name="Members[work_phone][0]" placeholder="Enter your job work phone number"
+                                        id="work-phone-number">
                                 </label>
                             </div>
 
                             <div class="col-lg-12">
                                 <label class="registration__form-label" for="work-phone-number">
                                     Accreditation certificate number
-                                    <input required class="registration__form-item input" type="text" name="Members[accreditation_certificate][0]" placeholder="Enter your accreditation certificate number" id="work-phone-number">
+                                    <input required class="registration__form-item input" type="text"
+                                        name="Members[accreditation_certificate][0]"
+                                        placeholder="Enter your accreditation certificate number"
+                                        id="work-phone-number">
                                 </label>
                             </div>
                         </div>
@@ -563,21 +590,26 @@
                     <div class="col-lg-12">
                         <label class="registration__form-label" for="date-of-arrival">
                             Date
-                            <input class="registration__form-item input flight-info" type="date-of-arrival" data-role="calendarpicker" name="Members[arrival_date][0]" placeholder="Choose your arrival date" id="date" disabled required>
+                            <input class="registration__form-item input flight-info" type="date-of-arrival"
+                                data-role="calendarpicker" name="Members[arrival_date][0]"
+                                placeholder="Choose your arrival date" id="date" disabled>
                         </label>
                     </div>
 
                     <div class="col-lg-12">
                         <label class="registration__form-label" for="city-of-arrival">
                             City of arrival
-                            <input required class="registration__form-item input flight-info" type="text" name="Members[arrival_city][0]" placeholder="Enter your city of arrival" id="city-of-arrival" disabled>
+                            <input class="registration__form-item input flight-info" type="text"
+                                name="Members[arrival_city][0]" placeholder="Enter your city of arrival"
+                                id="city-of-arrival" disabled>
                         </label>
                     </div>
 
                     <div class="col-lg-12">
                         <label class="registration__form-label" for="flight-number">
                             Flight number
-                            <input required class="registration__form-item input flight-info" type="number" name="Members[arrival_flight_number][0]" id="flight-number" disabled>
+                            <input class="registration__form-item input flight-info" type="number"
+                                name="Members[arrival_flight_number][0]" id="flight-number" disabled>
                         </label>
                     </div>
 
@@ -587,28 +619,32 @@
                     <div class="col-lg-12">
                         <label class="registration__form-label" for="date-of-departure">
                             Date
-                            <input class="registration__form-item input flight-info" type="date-of-departure" data-role="calendarpicker" name="Members[departure_date][0]" id="date" disabled required>
+                            <input class="registration__form-item input flight-info" type="date-of-departure"
+                                data-role="calendarpicker" name="Members[departure_date][0]" id="date" disabled>
                         </label>
                     </div>
 
                     <div class="col-lg-12">
                         <label class="registration__form-label" for="city-of-departure">
                             Departure city
-                            <input required class="registration__form-item input flight-info" type="text" name="Members[departure_city][0]" id="city-of-departure" disabled>
+                            <input class="registration__form-item input flight-info" type="text"
+                                name="Members[departure_city][0]" id="city-of-departure" disabled>
                         </label>
                     </div>
 
                     <div class="col-lg-12">
                         <label class="registration__form-label" for="flight-number-departure">
                             Flight number
-                            <input required class="registration__form-item input flight-info" type="number" name="Members[departure_flight_number][0]" id="flight-number-departure" disabled>
+                            <input class="registration__form-item input flight-info" type="number"
+                                name="Members[departure_flight_number][0]" id="flight-number-departure" disabled>
                         </label>
                     </div>
 
                     <div class="col-lg-12">
                         <label class="registration__form-label" for="">
                             Do you need a visa to enter Uzbekistan?
-                            <input class="registration__form-item checkbox flight-info" name="Members[visa][0]" type="checkbox" value="1">
+                            <input class="registration__form-item checkbox flight-info" name="Members[visa][0]"
+                                type="checkbox" value="1">
                         </label>
                     </div>
 
@@ -626,11 +662,13 @@
                         </p>
                     </div>
 
-                    <input required type="hidden" name="_csrf-backend" value="zbwMnptXRjd6g-ZBZe3BgGdo6vFlTKyE5d6GCgLFINCHzm3x8BQyAA_ngQ4CnYf5Iz6SqDwDyty6uM5IcZIR6A==">
+                    <input required type="hidden" name="_csrf-backend"
+                        value="zbwMnptXRjd6g-ZBZe3BgGdo6vFlTKyE5d6GCgLFINCHzm3x8BQyAA_ngQ4CnYf5Iz6SqDwDyty6uM5IcZIR6A==">
                     <!-- SESSIONS END -->
 
                     <div class="col-12">
-                        <button class="registration__form-apply" type="submit" form="registration-form" id="registration-submit-btn">Register</button>
+                        <button class="registration__form-apply" type="submit" form="registration-form"
+                            id="registration-submit-btn">Register</button>
                     </div>
                 </div>
             </form>
