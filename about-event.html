@@ -20,26 +20,22 @@
                 <div class="nav-logo logo-mobile">
                     <img src="images/logo.svg" alt="">
                 </div>
+                <!--   <div id="language-selector" class="language-selector">
+                    <button data-lang="en">English</button>
+                    <button data-lang="ru">Русский</button>
+                    <button data-lang="uz">O'zbek</button>
+                </div> -->
                 <nav class="menu">
-                    <button class="close"></button>
+
                     <div class="menu__wrapper">
                         <ul class="menu__list">
+                            <button class="close__btn"></button>
                             <li class="menu__list-item inner">
-                                <ul class="menu__top-list">
-                                    <li class="menu__top-list__item">
-                                        <div class="nav-logo">
-                                            <a href="index.html">
-                                                <img src="images/logo.svg" alt="">
-                                            </a>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </li>
-
-                            <li class="menu__list-item">
-                                <a class="menu__list-link" href="#">
-                                    INFORMATION PARTNERS
-                                </a>
+                                <div class="nav-logo">
+                                    <a href="index.html">
+                                        <img src="images/logo.svg" alt="">
+                                    </a>
+                                </div>
                             </li>
 
                             <li class="menu__list-item">
@@ -48,8 +44,8 @@
                                 </a>
                             </li>
                             <li class="menu__list-item">
-                                <a class="menu__list-link" href="about-event.html">
-                                    ABOUT EVENT
+                                <a class="menu__list-link" href="#">
+                                    CONFERENCE
                                 </a>
 
                                 <ul>
@@ -61,21 +57,16 @@
                                 </ul>
                             </li>
 
-                            <li class="menu__list-item logo">
-                                <a class="menu__list-link logo" href="index.html">
-                                    <img src="images/logo.svg" alt="logo">
-                                </a>
-                            </li>
-
+                           
                             <li class="menu__list-item">
                                 <a class="menu__list-link" href="#">
-                                    LOCATION
+                                    VENUE
                                 </a>
 
                                 <ul>
                                     <li>
                                         <a href="site.html">
-                                            The site
+                                            LOCATION
                                         </a>
                                     </li>
                                     <li>
@@ -97,6 +88,13 @@
                                     SPEAKERS
                                 </a>
                             </li>
+
+                            <li class="menu__list-item logo">
+                                <a class="menu__list-link logo" href="index.html">
+                                    <img src="images/logo.svg" alt="logo">
+                                </a>
+                            </li>
+
 
                             <li class="menu__list-item">
                                 <a class="menu__list-link" href="agenda.html">
@@ -129,11 +127,17 @@
                                     </li>
 
                                     <li>
-                                        <a href="#">
+                                        <a href="accreditation.html">
                                             ACCREDIATION
                                         </a>
                                     </li>
                                 </ul>
+                            </li>
+
+                            <li class="menu__list-item">
+                                <a class="menu__list-link" href="#">
+                                    INFORMATION PARTNERS
+                                </a>
                             </li>
 
                             <li class="menu__list-item">
@@ -160,9 +164,7 @@
                 <img src="images/test2.png" alt="section about header">
             </div>
             <div class="container">
-                <h1 class="section__header-title title">
-                    ABOUT EVENT
-                </h1>
+                <h1 class="section__header-title title" data-translate="header"></h1>
             </div>
         </div>
     </section>
@@ -170,90 +172,137 @@
         <div class="container">
             <div class="row about__wrapper wrapper">
                 <div class="col-12 about__text-cover">
-                   
+                    <h2 data-translate="concept"></h2>
+                    <h3 id="content-title"></h3>
+                    <p id="content-description"></p>
+                    <h4>Main Objectives</h4>
+                    <ul id="content-objectives"></ul>
+                    <h4>Expected Results</h4>
+                    <p id="content-results"></p>
                 </div>
             </div>
         </div>
     </section>
 </main>
 
+
 <footer class="footer">
+
 
     <div class="container">
 
+
         <div class="footer__wrapper">
+
 
             <h1 class="footer__title title">
 
+
                 CONTACT US
+
 
             </h1>
 
+
             <div class="footer__contact">
+
 
                 <a class="footer__contact-link" href="tel:998974280825">+99897 428 08 25</a>
 
+
                 <a class="footer__contact-link location" href="contacts.html">Uzatom Agency</a>
 
+
             </div>
+
 
             <div class="socials">
 
+
                 <a href="https://youtube.com/channel/UCjN-A6SJYSaEpEOONekIgmQ">
+
 
                     <img src="images/youtube.svg" alt="youtube">
 
+
                 </a>
+
 
                 <a href="https://instagram.com/uzatominfo?utm_medium=copy_link">
 
+
                     <img src="images/instagram.svg" alt="instagram">
 
+
                 </a>
+
 
                 <a href="https://t.me/uzatom_info">
 
+
                     <img src="images/telegram.svg" alt="telegram">
 
+
                 </a>
+
 
                 <a href="https://x.com/uzatomagency">
 
+
                     <img src="images/twitter.svg" alt="twitter">
 
+
                 </a>
+
 
                 <a href="https://www.facebook.com/uzatom/">
 
+
                     <img src="images/facebook.svg" alt="facebook">
+
 
                 </a>
 
+
             </div>
+
 
             <p class="footer__text">
 
+
                 The use of materials posted on the site is allowed only with the written permission of the respective
+
 
                 copyright holder.
 
+
                 Automated extraction of posted information by any services without official permission is prohibited.
+
 
             </p>
 
+
         </div>
+
 
 </footer>
 
 
 
+
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
 
 <script src="https://cdn.korzh.com/metroui/v4/js/metro.min.js"></script>
 
+
 <script src="js/main.min.js"></script>
 
+
 </body>
+
+
 
 
 
