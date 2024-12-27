@@ -1,13 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Panel - News Management</title>
-</head>
-<body>
-    <style>
-        body {
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Admin Panel - News Management</title></head><body><style>body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
@@ -70,45 +61,7 @@
             border-radius: 4px;
             background: #f4f4f4;
             font-family: monospace;
-        }
-    </style>
-    <main class="admin-panel">
-        <h1>News Management Panel</h1>
-        <form id="news-form">
-            <div>
-                <label for="title-en">Title (English):</label>
-                <input type="text" id="title-en" name="title-en" required>
-            </div>
-            <div>
-                <label for="title-ru">Title (Russian):</label>
-                <input type="text" id="title-ru" name="title-ru" required>
-            </div>
-            <div>
-                <label for="title-uz">Title (Uzbek):</label>
-                <input type="text" id="title-uz" name="title-uz" required>
-            </div>
-            <div>
-                <label for="description-en">Description (English):</label>
-                <textarea id="description-en" name="description-en" required></textarea>
-            </div>
-            <div>
-                <label for="description-ru">Description (Russian):</label>
-                <textarea id="description-ru" name="description-ru" required></textarea>
-            </div>
-            <div>
-                <label for="description-uz">Description (Uzbek):</label>
-                <textarea id="description-uz" name="description-uz" required></textarea>
-            </div>
-            <div>
-                <label for="image">Image URL:</label>
-                <input type="url" id="image" name="image" required>
-            </div>
-            <button type="submit">Create News</button>
-        </form>
-    </main>
-
-    <script>
-        document.getElementById('news-form').addEventListener('submit', function (e) {
+        }</style><main class="admin-panel"><h1>News Management Panel</h1><form id="news-form"><div><label for="title-en">Title (English):</label> <input type="text" id="title-en" name="title-en" required></div><div><label for="title-ru">Title (Russian):</label> <input type="text" id="title-ru" name="title-ru" required></div><div><label for="title-uz">Title (Uzbek):</label> <input type="text" id="title-uz" name="title-uz" required></div><div><label for="description-en">Description (English):</label> <textarea id="description-en" name="description-en" required></textarea></div><div><label for="description-ru">Description (Russian):</label> <textarea id="description-ru" name="description-ru" required></textarea></div><div><label for="description-uz">Description (Uzbek):</label> <textarea id="description-uz" name="description-uz" required></textarea></div><div><label for="image">Image URL:</label> <input type="url" id="image" name="image" required></div><button type="submit">Create News</button></form></main><script>document.getElementById('news-form').addEventListener('submit', function (e) {
             e.preventDefault(); // Stop default behavior
 
             // Debugging
@@ -168,7 +121,4 @@
             a.download = fileName;
             a.click();
             URL.revokeObjectURL(a.href); // Clean up
-        }
-    </script>
-</body>
-</html>
+        }</script></body></html>
